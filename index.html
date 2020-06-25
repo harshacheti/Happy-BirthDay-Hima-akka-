@@ -38,7 +38,7 @@ click{
 }
 </style>
 <canvas id=c></canvas>
-	<p><a href="gallery.html">open</a></p>
+	<p id=delay><a href="gallery.html">open</a></p>
 <script>
 var w = c.width = window.innerWidth,
 		h = c.height = window.innerHeight,
@@ -442,6 +442,9 @@ window.addEventListener( 'resize', function(){
 	
 	ctx.font = opts.charSize + 'px Verdana';
 })
+	 $(document).ready(function() {
+      $('#delay').hide().delay(3000).fadeIn(2200);
+});
 </script>
 
 </html>
